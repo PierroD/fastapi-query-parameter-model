@@ -89,6 +89,8 @@ async def full_test(
 
 ### Example Response
 
+Using the following query : `small-test?title=thisATitle&isMajor=true&array[]=a&array[]=b&array[]=c`
+
 For the `/small-test` route, a sample response might look like this:
 
 ```json
