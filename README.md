@@ -1,9 +1,3 @@
-Thank you for the clarification. Let's adjust the README to accurately describe the functionality of the `QueryParameterModel`. Specifically, we’ll correct the description about alias conversion and emphasize the feature of returning a full model, which is useful for handling multiple query parameters in routes.
-
-Here’s the revised README:
-
----
-
 # QueryParameterModel
 
 **QueryParameterModel** is a Python library designed to simplify the parsing of query parameters in FastAPI applications. Utilizing Pydantic for validation, this package offers a streamlined approach to handling query parameters, including automatic conversion of camelCase query parameters from the URL to Python's snake_case convention.
@@ -20,7 +14,7 @@ Here’s the revised README:
 You can install **QueryParameterModel** via pip:
 
 ```bash
-pip install queryparametermodel
+pip install fastapi-query-parameter-model
 ```
 
 ## Usage
@@ -115,7 +109,7 @@ Please ensure that your code adheres to the existing style and includes tests wh
 
 ## Contact
 
-For questions or feedback, feel free to open an issue on the [GitHub repository](https://github.com/yourusername/yourmodelname) or contact us at [your.email@example.com](mailto:your.email@example.com).
+For questions or feedback, feel free to open an issue on the [GitHub repository](https://github.com/PierroD/fastapi-query-parameter-model).
 
 ---
 
