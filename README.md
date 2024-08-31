@@ -24,7 +24,7 @@ pip install fastapi-query-parameter-model
 Create a model by inheriting from `QueryParameterModel` and define your query parameters. CamelCase query parameters from the URL will be converted to snake_case in your model.
 
 ```python
-from queryparametermodel import QueryParameterModel
+from fastapi_query_parameter_model import QueryParameterModel
 from fastapi import Query
 
 class SmallTestQueryParamsModels(QueryParameterModel):
@@ -40,7 +40,7 @@ Use FastAPI’s dependency injection to parse query parameters into the model:
 
 ```python
 from fastapi import FastAPI, Depends
-from queryparametermodel import QueryParameterModel
+from fastapi_query_parameter_model import QueryParameterModel
 
 app = FastAPI()
 
@@ -57,7 +57,7 @@ Here are two example endpoints demonstrating how to use the models with FastAPI:
 
 ```python
 from fastapi import FastAPI, Depends, Query
-from queryparametermodel import QueryParameterModel
+from fastapi_query_parameter_model import QueryParameterModel
 
 app = FastAPI()
 
