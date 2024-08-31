@@ -87,10 +87,26 @@ async def full_test(
     return query_params.model_dump()
 ```
 
+### Example Response
+
+For the `/small-test` route, a sample response might look like this:
+
+```json
+{
+  "title": "thisATitle",
+  "age": 0,
+  "is_major": true,
+  "array": ["a", "b", "c"]
+}
+```
+
+This response shows how the query parameters are parsed and returned as a Pydantic model instance with snake_case attributes.
+
+
 ### Methods
 
 - **`parser(request: Request)`**: Parses the query parameters from a FastAPI `Request` object and returns an instance of the model with converted snake_case attributes.
-- **`model_dump()`**: Returns a dictionary representation of the model’s data, useful for processing or returning the data in API responses.
+- **`model_dump()`**: This is a native pydantic function, only used in this example, to show the result of the parsed query parameters model
 
 ## Contributing
 
